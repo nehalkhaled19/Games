@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Comfortaa:wght@300;400;600;700&family=Nerko+One&family=Permanent+Marker&family=Ubuntu:wght@400;500;700&family=Victor+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+  <!-- loading -->
+  <div id="loading">
+    <span class="loader"></span>
+  </div>
+
+  <!-- home -->
+  <div id="show" style="display: block;">
+    <div class=" bg w-100 position-relative ">
+
+      <header class=" container">
+        <nav class="navbar position-absolute bottom-0 shadow-lg rounded-4 navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand text-white  " href="#">
+              <img src="images/logo-sm.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              GAME REVIEWS
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="fw-bolder navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white active" type="mmorpg" aria-current="page" href="#">MMORPG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" type="shooter" href="#">SHOOTER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" type="sailing" href="#">SAILING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" type="permadeath" href="#">PERMADEATH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" type="superhero" href="#">SUPERHERO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" type="pixel" href="#"> PIXEL</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <section class="py-3 ">
+      <div class="container  mt-5">
+        <div class="row justify-content-center gy-4" id="myRow">
+
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Details--->
+  <section id="detailes" class="w-100" style="display: none;">
+
+    <div class="container mt-5">
+      <div class=" py-4 d-flex align-items-center justify-content-between">
+        <h4 class=" text-white">Game deatiles</h4>
+        <i class="fa-solid  fa-2xl  fa-xmark" id="close"></i>
+      </div>
+      <div class="row mb-4" id="forDetailes">
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script type="module" src="js/main.js" ></script>
+  
+</body>
+
+</html>

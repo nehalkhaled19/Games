@@ -1,0 +1,16 @@
+@media (max-width:1400px) {
+    .navbar{
+        right: 5%;
+        left: 5%;
+    }
+}
+@media (max-width:480px) {
+    .navbar{
+        right: 0;
+        left: 0;
+        padding: 10px 5px;
+    }
+    .navbar-brand{
+        font-size:16 ;
+    }
+}

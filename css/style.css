@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+    background-color: #272b30;
+}
+
+:root {
+    --font: 'Bruno Ace SC', cursive;
+    --maincolor: #3a497b;
+}
+
+/* Home */
+.bg {
+    background-image: url(../images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    height: 35%;
+}
+
+.navbar {
+    right: 15%;
+    left: 15%;
+    background-color: var(--maincolor) !important;
+    padding: 10px;
+    z-index: 5555;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7) !important;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.navbar-brand {
+    font-family: var(--font);
+}
+header:hover{
+    background-color: brown ;
+}
+
+
+.nav-link {
+    font-size: 12;
+}
+.navbar-brand:hover{
+  color: antiquewhite;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+.f{
+    filter: grayscale(0.7);
+    transition: all 1s;
+}
+
+.f:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.game-name {
+    font-family: 'Victor Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+}
+
+.fix {
+    height: 85%;
+}
+
+.free {
+    background-color: #0d6efd;
+    font-family: 'Victor Mono', monospace;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px;
+    font-weight: 700;
+}
+
+.free:hover {
+    background-color: #0d6efd;
+}
+
+p {
+
+    font-family: 'Victor Mono', monospace;
+    font-size: 12px;
+    color: rgb(145, 147, 149);
+}
+
+.type button {
+    color: #fff;
+    font-family: 'Victor Mono', monospace;
+    background-color: #545557;
+    font-size: 10.5px;
+    font-weight: 700;
+    border: 0;
+}
+
+.type button:hover {
+    color: white;
+    background-color: #545557;
+}
+
+.border-n {
+    border-color: #212423 !important;
+}
+
+#show {
+    transition: all 0.5s;
+}
+
+/* Details */
+i {
+
+    color: #939395;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+i:hover {
+    color: #c7c7c8;
+}
+
+h4,
+h3 {
+    font-family: var(--font);
+    font-size: 27.4195px;
+
+    font-weight: 300;
+}
+
+#detailes p {
+    color: white;
+    line-height: 21px;
+}
+
+#detailes span {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+
+/* loading */
+#loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.7;
+    background-color: #272b30;
+    ;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: #222b32;
+}
+
+.loader:before {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    margin: auto;
+    background: #0d6efd;
+    animation: diamondLoader 2s linear infinite;
+}
+
+@keyframes diamondLoader {
+
+    0%,
+    10% {
+        transform: translate(-64px, -64px) rotate(-45deg)
+    }
+
+    90%,
+    100% {
+        transform: translate(0px, 0px) rotate(-45deg)
+    }
+}
