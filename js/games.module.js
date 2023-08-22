@@ -35,6 +35,7 @@ export class Home {
             // console.log(e.target);
             let n = e.target.type
             $('.active').removeClass('active');
+            e.target.classList.add('active');
             $("#loading").fadeIn(0);
             this.getdata(n)
              }) 
